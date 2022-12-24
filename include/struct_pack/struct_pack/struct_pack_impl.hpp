@@ -2365,7 +2365,7 @@ class unpacker {
           template_switch<variant_construct_helper,
                           std::integral_constant<std::size_t, size_type>,
                           std::integral_constant<std::uint64_t, version>,
-                          std::integral_constant<bool, NotSkip>>(index, *this,
+                          std::integral_constant<bool, NotSkip>>(*this,
                                                                  item);
         }
       }
